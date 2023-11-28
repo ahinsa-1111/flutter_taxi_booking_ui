@@ -19,10 +19,26 @@ class Home extends StatelessWidget {
           height: 100,
         ),
         Container(
-            width: double.infinity,
-            height: 300,
-            child: Image.asset(
-                '89001316-taxi-driver-and-yellow-cab-illustration-removebg-preview.png'))
+          width: double.infinity,
+          height: 300,
+          child: Image.asset('assets/taxi.png'),
+        ),
+        Text(
+          "E-Taxi Service",
+          style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Text(
+            "Welcome! Take a Ride To Your Destination With The Best Driver..!",
+            style: TextStyle(fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+        ),
       ],
     );
   }
