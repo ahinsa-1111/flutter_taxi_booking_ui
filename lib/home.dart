@@ -39,6 +39,32 @@ class Home extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ),
+        SizedBox(
+          height: 50,
+        ),
+        Container(
+          height: 60,
+          width: 350,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3))
+              ]),
+          child: Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20.0),
+                child: Text(
+                  "+94-xxxxxxxxx",
+                  style: TextStyle(fontSize: 20),
+                ),
+              )),
+        )
       ],
     );
   }
