@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 50,
+          height: 30,
         ),
         Container(
           height: 60,
@@ -64,7 +64,29 @@ class Home extends StatelessWidget {
                   style: TextStyle(fontSize: 20),
                 ),
               )),
-        )
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Container(
+          height: 60,
+          width: 350,
+          decoration: BoxDecoration(
+            color: Colors.amber[600],
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Center(
+              child: Text("Book a Ride",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ))),
+        ),
+        Text(
+          "More",
+          style: TextStyle(color: Colors.blue),
+        ),
       ],
     );
   }
